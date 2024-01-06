@@ -46,15 +46,26 @@ h2, p {
     font-family: 'Raleway', serif;
 }
 
-p {
+p, ul, li{
     margin-right: 10%;
     font-size: 20px;
     color: rgb(249, 191, 83);
 }
+ 
+li {
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+.opensource {
+    width: 110%;
+    font-family: 'Poppins', serif;
+}
 
 figure {
     margin-top: 10%;
-    border: 4px #504f4f inset;
+    border: 4px #f48787 inset;
     padding: 4px;
     margin-left: 23%;
     width: 500px;
@@ -83,8 +94,13 @@ h3 {
     /* margin: 0 auto; */
     font-size: 45px;
     color: orangered;
-    /* text-align: center; */
+}
+
+.events h3 {
     animation: typing 4s steps(40, end);
+    animation-delay: 2s;
+    animation-iteration-count: 5;
+
 }
 
 @keyframes blinking {
@@ -92,46 +108,166 @@ h3 {
     100% { opacity:0 }
 }
 
-span {
+.cursor {
     animation: blinking 800ms infinite;
 }
 
 /* why should you show up for FOSS? */
 
-.socialicons, .footer{
+.icons {
     display: flex;
-    height: 20vh;
     width: 100%;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -5%;
+    margin-top: 3%;
 }
 
-.fa {
-    height: 50px;
-    width: 50px;
+.fa-instagram {
+    color: #fb0d7c;
+}
+
+.fa-github {
+    color: rgb(239, 17, 239);
+}
+
+.fa-twitter {
+    color: lightblue;
+}
+
+.fa-linkedin {
+    color: rgb(86, 74, 167);
+}
+
+.fa { 
+    padding: 2px; 
+    font-size: 40px; 
+    width: 40px; 
+    text-decoration: none; 
+    /* margin: 5px 80px;  */
+} 
+
+
+.footer:hover {
+    text-shadow: 5px 5px 15px rgb(255, 213, 0);
+}
+
+.fa:hover {
+    opacity: 0.45;
+}
+
+.footer {
+    color: rgb(253, 142, 105);
+    text-shadow: #d9730d 0px 0px 10px;
+}
+
+.maincontainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 1px orange inset;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -5%;
+}
+
+.maincontainer p {
+    color:rgb(248, 165, 113);
+}
+
+.eventone, .eventtwo, .eventthree {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+/* add pagination */
+
+.gridmain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 1550px;
+    margin-left: -2%;
+    gap:10px;
+}
+
+.gridmain img {
+    width: 350px;
+    height: 170px;
+}
+
+.gallery h3 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.pic4{
+    grid-area: 2/1/4/2;
+}
+
+.pic6{
+    grid-area: 2/3/4/4;
+}
+
+.pic2{
+    grid-area: 1/2/3/3;
+}
+
+.pic10{
+    grid-area: 5/1/6/4;
+}
+
+.gridmain img{
     border-radius: 50%;
-    background-color: black;
-    color: orangered;
+}
+.gridmain .pic4 img, .gridmain .pic6 img, .gridmain .pic2 img{
+    height: 340px;
 }
 
-.fa {
-    /* padding: 20px; */
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  }
-  
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  .fa-instagram {
-    background: #55ACEE;
-    color: white;
-  }
+.pic8 img, .pic10 img, .pic6 img, .pic1 img{
+    border-radius:0;
+}
 
+
+.pic10 img {
+    width: 1050px;
+    height: 440px;
+}
+
+.end {
+    height: 30vh;
+    margin-left: -15%;
+    padding: 10px;
+    border: 2px outset rgb(215, 77, 12);
+    box-shadow: #f8a451 0px 0px 10px;
+    margin-bottom: 0;
+    margin-top: 10%;
+}
+
+.imp p, p a {
+    text-align: left;
+    background: linear-gradient(to left, rgb(254, 230, 142), rgb(255, 80, 17));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.faqs h2{
+    font-family: 'Zeyada', sans-serif;
+}
+
+.faqs p {
+    font-family: 'Zeyada', sans-serif;
+    text-align: left;
+    font-size: 40px;
+}
+
+p.ans {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 23px;
+}
+
+p.q {
+    color: rgb(247, 120, 85);
+}
